@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "c4ad40a7-4c87-4097-8ab8-611db70ced3d",
+		"name": "Voting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Agenda",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n  \"agendaId\": 13,\n\n  \"legalId\": \"58068151028\",\n\n  \"choice\": \"NO\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/voting/vote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"voting",
+						"vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start Agenda",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/voting/agenda/start/:id?seconds=60",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"voting",
+						"agenda",
+						"start",
+						":id"
+					],
+					"query": [
+						{
+							"key": "seconds",
+							"value": "60"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Agenda description\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/voting/agenda/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"voting",
+						"agenda",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Agenda",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"xalalalalalala alala\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/voting/agenda/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"voting",
+						"agenda",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

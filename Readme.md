@@ -22,7 +22,7 @@ OBS: there's a postman collection with the 4 essential methods of the applicatio
 * Docker (with docker-compose)
 
 ### Linux
-Run the script `buildImage.sh` then the command `docker-composeup`. 
+Run the script `buildImage.sh` then the command `docker-compose up`. 
 The docker-compose file contains a MySQL database to run with the application, and the application itself.
 
 ### Windows

@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c4ad40a7-4c87-4097-8ab8-611db70ced3d",
+		"_postman_id": "04b46a8b-87cb-4726-8989-dbed947fa20c",
 		"name": "Voting",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -108,7 +108,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"description\": \"xalalalalalala alala\"\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
